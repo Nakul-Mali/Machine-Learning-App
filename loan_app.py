@@ -78,7 +78,7 @@ def main():
             Married=0       
         
             
-        
+        st.success("Customer entered loan amount = {}".format(LoanAmount))
         X = [[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,
                                       Loan_Amount_Term,Credit_History,Property_Area]]
             
@@ -103,10 +103,10 @@ def main():
         shap_values = explainer.shap_values( data_for_prediction )
 
         # visualize the first prediction's explaination
-        shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction ,link='logit', matplotlib=True, figsize=(18,6))
+        #shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction ,link='logit', matplotlib=True, figsize=(18,6))
 
-        st.pyplot(bbox_inches='tight',dpi=300,pad_inches=0)
-        plt.clf()
+        #st.pyplot(bbox_inches='tight',dpi=300,pad_inches=0)
+        #plt.clf()
     
     
 if __name__== '__main__' :
