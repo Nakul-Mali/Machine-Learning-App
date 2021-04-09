@@ -5,4 +5,4 @@ pandas>=1.1.4
 numpy==1.18.1
 matplotlib==3.3.3
 seaborn==0.10.0
-sklern==0.24.1
+- sklern==0.24.1
